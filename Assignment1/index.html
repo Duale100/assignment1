@@ -1,0 +1,82 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Assignment 1</title>  
+</head>  
+<body>
+    <!-- As a link -->
+    <nav class="navbar navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Komputer Store</a>
+    </nav>
+    
+    <br>
+
+    <div class="card-deck" style= "margin-inline: auto; text-align: center; width: 76%;">
+        <!-- JOE BANKER card -->
+        <div class="card" class="col d-flex justify-content-center">
+          <div class="card-body">
+            <h5 class="card-title"><b>Joe Banker</b></h5>
+            <p id="balanceEl"></p>
+            
+            <br>
+
+                <p id="loanEl"></p>
+                <button type="button" class="btn btn-success" id="btn-loan" >Get a loan</button>
+          </div>
+        </div>
+        <!-- WORK card-->
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title" ><b>Work</b></h5>
+            
+            <div style="overflow: hidden;">
+              <p style="float: left;">Pay:</p>
+              <p style="float: right;">kr</p>
+              <p id ="payEl" style="float: right;"> 0</p>
+            </div>
+              <br>
+              
+            <button type="button" class="btn btn-warning" id="btnBank">Bank</button>
+            <button type="button" class="btn btn-primary" id="btnWork">Work</button>
+          
+          </div>
+        </div>
+        <!-- LAPTOP card -->
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title"><b>Laptop</b></h5>
+            <select name="laptops" id="laptops"></select> <br>
+            <span><b>Features:</b></span> <br>
+            <span id="specs"></span>
+          </div>
+        </div>
+      </div> <br>
+    
+      <!-- SINGLE LAPTOP card -->
+      <div class="card w-75" style= "margin-inline: auto; width: 60%;">
+        <div class="card-body" style="text-align: center;">
+          <!-- Everything text and button centered div -->
+          
+            <!-- img -->
+            <img id="imgEl"  style="width: 20%; float: left;"></img> <br>
+            <!-- Text -->
+            <h2 id="title">PC</h2>
+            <p id="description"></p>
+            <p id="price" style="display:inline-block"></p> 
+            <p style="display:inline-block">NOK</p> <br>
+            <!-- button -->
+            <button type="button" class="btn btn-primary" id="btnBuy" >Buy Now</button>
+                  
+        </div>
+      </div>
+      <!-- JS tag -->
+    <script src="app.js"></script>
+    <!-- Bootstrap tag -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>  
+</html>  
